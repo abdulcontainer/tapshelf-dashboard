@@ -1,0 +1,32 @@
+.layoutOverlay{
+  display: flex;
+  gap: 2px;
+  height: 100vh;
+  background-color: #F0F1F3;
+}
+
+.mainSectionOverlay{
+  flex-grow: 1;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainSection{
+  margin: 15px 20px;
+  height: 100%;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sideMenu{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .mainSection{
+    margin: 15px 10px;
+  }  
+}

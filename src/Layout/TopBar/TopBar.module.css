@@ -1,0 +1,56 @@
+.topBarOverlay{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  gap: 5px;
+}
+
+.menuIcon{
+  display: none;  
+}
+
+.searchBox{
+  width: 250px;
+}
+
+.searchBox input{
+  padding: 5px;
+}
+
+.searchBox:focus{
+  outline: none;
+}
+
+.userSection{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.userSection button:nth-child(1):hover{
+  transform: rotate(20deg);
+}
+
+@media only screen and (max-width: 1024px) {
+  .menuIcon{
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 932px) {
+  .topBarOverlay{
+    padding: 10px 15px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .topBarOverlay{
+    padding: 10px;
+  }
+  
+  .userSection{
+    gap: 5px;
+  }
+}

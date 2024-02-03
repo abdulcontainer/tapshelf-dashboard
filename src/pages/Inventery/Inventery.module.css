@@ -1,0 +1,13 @@
+.inventeryOverlay{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 932px) {
+  .inventeryOverlay{
+    height: auto;
+  } 
+}

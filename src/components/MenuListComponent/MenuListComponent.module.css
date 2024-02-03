@@ -1,0 +1,20 @@
+.menuOverlay{
+  padding:0;
+}
+
+.mainMenuStyle{
+  flex-grow: 1;
+  flex-basis: 0;
+  overflow: auto;
+}
+
+.menuItem span{
+  color: var(--darkColor);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.menuItem span:hover,
+.activePageStyle span{
+  color: #054aab;
+}

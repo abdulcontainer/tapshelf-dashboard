@@ -1,0 +1,37 @@
+
+.formWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputFieldWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputFieldWrapper label{
+  font-size: 12px;
+  width: 30%;
+}
+
+.inputFieldWrapper input{
+  font-size: 14px;
+  padding: 5px 5px 5px 10px;
+}
+
+.inputField{
+  width: 60%;
+}
+
+.formButtons{
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.formButtons button{
+  padding: 5px 15px;
+}

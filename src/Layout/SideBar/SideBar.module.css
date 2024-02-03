@@ -1,0 +1,17 @@
+.sideBarOverlay{
+  width: 250px;
+  height: 100%;
+  background-color: white;
+}
+
+.sideBarWrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sideBarWrapper h3 {
+  color: #054aab;
+  padding-left: 20px;
+  margin: 15px 0 10px 0;
+}

@@ -1,0 +1,5 @@
+.filterSection{
+  text-align: right;
+  display: flex;
+  gap: 15px;
+}

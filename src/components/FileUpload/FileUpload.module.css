@@ -1,0 +1,35 @@
+.fileUploadWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.imageWrapper{
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px dashed var(--darkColor);
+  overflow: hidden;
+}
+
+.imageWrapper img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.imageContent{
+  color: var(--darkColor);
+  font-size: 12px;
+  text-align: center;
+}
+
+.imageContent label {
+  text-transform: none;
+  padding: 0;
+  font-size: 12px;
+}

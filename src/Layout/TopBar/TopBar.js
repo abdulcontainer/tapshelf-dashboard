@@ -5,11 +5,15 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import UserImage from '../../assets/user.jpg'
 import DrawerMenu from '../../components/DrawerMenu/DrawerMenu';
-import { Avatar, Box, IconButton, InputAdornment, TextField } from '@mui/material';
+import { Avatar, Box, IconButton, InputAdornment, MenuItem, Select, TextField } from '@mui/material';
+import LangSwitcher from '../../components/LangSwitcher/LangSwitcher';
+import { useTranslation } from 'react-i18next';
 
 const TopBar = () => {
   const [ search, setSearch ] = useState('');
-  const [ drawer, setDrawer ] = useState(false)
+  const [ drawer, setDrawer ] = useState(false);
+
+  const {t} = useTranslation()
 
   return (
     <Box className={styles.topBarOverlay}>
@@ -22,7 +26,7 @@ const TopBar = () => {
 
       <TextField
         className={styles.searchBox}
-        placeholder='Search'
+        placeholder={t('search')}
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         InputProps={{
@@ -31,6 +35,7 @@ const TopBar = () => {
       />
       
       <Box className={styles.userSection}>
+        <LangSwitcher/>
         <IconButton>
           <IoMdNotificationsOutline/>
         </IconButton>

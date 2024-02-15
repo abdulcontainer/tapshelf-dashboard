@@ -1,9 +1,16 @@
 import './App.css';
-import Inventery from './pages/Inventery/Inventery'
+import { BrowserRouter as Routers, Routes, Route } from "react-router-dom";
+import Inventery from './pages/Inventery/Inventery';
+import HigherOrder from './pages/HigherOrder/HigherOrder';
 
 function App() {
   return (
-    <Inventery/>
+    <Routers>
+      <Routes>
+        <Route path='/' element={<Inventery/>} />
+        <Route path='higher-order' element={<HigherOrder/>} />
+      </Routes>
+    </Routers>
   );
 }
 

@@ -1,0 +1,9 @@
+.langWrapper {
+  width: 100px;
+}
+
+@media only screen and (max-width: 280px) {  
+  .langWrapper{
+    width: 50px;
+  }
+}

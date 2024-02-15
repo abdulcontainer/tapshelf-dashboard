@@ -19,17 +19,13 @@
   padding: 5px;
 }
 
-.searchBox:focus{
-  outline: none;
-}
-
 .userSection{
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.userSection button:nth-child(1):hover{
+.userSection button:nth-child(2):hover{
   transform: rotate(20deg);
 }
 
